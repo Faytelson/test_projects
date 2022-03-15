@@ -100,11 +100,20 @@
    <main class="main-body">
       <div class="container g-5">
          <div class="main-body__wrapper">
-            <h1 class="main-title">Games</h1>
+
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="breadcrumb-wrapper">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Discover</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Games</li>
+               </ol>
+            </nav>
+
+            <h1 class="main-page__main-title main-title">Games</h1>
 
             <div class="banner">
                <div class="banner__img-container">
-                  <img src="image/main-bg.jpg" alt="" class="banner__img">
+                  <img src="image/main-bg.jfif" alt="" class="banner__img">
                </div>
                <div class="banner__text">
                   <h2 class="banner__title">Refer a friends<br> and get $10 off!</h2>
@@ -115,38 +124,81 @@
                </div>
             </div>
 
-            <div class="main-page__search search"></div>
+            <div class="main-page__search search">
+               <div class="search__body">
+                  <div class="search__titles row">
+                     <div class="search__title col-6">Search for games</div>
+                     <div class="search__title col-3">Category</div>
+                     <div class="search__title col-3">Sort by</div>
+                  </div>
+                  <div class="search__game-inputs row">
+                     <div class="search__game-input game-input col-6">
+                        <div class="game-input__wrapper">
+                           <input type="text" class="game-input__game-name" placeholder="Search...">
+                        </div>
+                     </div>
+
+                     <div class="search__game-input game-input col-3">
+                        <div class="game-input__wrapper">
+                           <div class="game-input__caterories">
+                              <button class="game-input__category-btn">
+                                 <div class="game-input__category-name">Strategy</div>
+                                 <div class="game-input__category-cross"></div>
+                              </button>
+                              <button class="game-input__category-btn">
+                                 <div class="game-input__category-name">RPG</div>
+                                 <div class="game-input__category-cross"></div>
+                              </button>
+                              <button class="game-input__category-btn">
+                                 <div class="game-input__category-name js-category-num">+3</div>
+                                 <div class="game-input__category-cross"></div>
+                              </button>
+                           </div>
+                           <button class="game-input__btn"></button>
+                        </div>
+                     </div>
+
+                     <div class="search__game-input game-input col-3">
+                        <div class="game-input__wrapper">
+                           <select name="" id="" class="game-input__sort">
+                              <option value="" class="game-input__sort">Popular</option>
+                              <option value="" class="game-input__sort"></option>
+                              <option value="" class="game-input__sort"></option>
+                              <option value="" class="game-input__sort"></option>
+                              <option value="" class="game-input__sort"></option>
+                              <option value="" class="game-input__sort"></option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
 
             <div class="main-page__products products row">
                <div class="products__product-add product-add col-3"></div>
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <a href="#" class="product-item__img-container">
+                        <img src="image/saints-row.jpg" alt="" class="product-item__img">
+                     </a>
                      <div class="product-item__main-body">
-                        <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/saints-row.jpg" alt="" class="product-item__img">
-                           </div>
+                        <a href="#" class="product-item__game-link">
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Action RPG</span>
                            </div>
                            <div class="product-item__game-name">Saints Row</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">0</div>
                         </div>
+
                         <div class="product-item__description">Platinum Edition</div>
                      </div>
                      <div class="product-item__price">
@@ -161,31 +213,27 @@
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/paladins.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/paladins.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Multiplayer RPG</span>
                            </div>
                            <div class="product-item__game-name">Paladins</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">0</div>
                         </div>
+
+                        <div class="rating__value">1,820</div>
                         <div class="product-item__description">Get the Captain Price Operator included with purchase
                         </div>
                      </div>
@@ -194,38 +242,33 @@
                            <span class="product-item__old-price-num"></span>
                            <span class="product-item__price-num">Free</span>
                         </div>
-                        <div class="product-item__discount">-50%</div>
+                        <div class="product-item__discount d-none">-50%</div>
                      </div>
                   </div>
                </div>
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/farcry-6.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/farcry-6.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Action</span>
                            </div>
                            <div class="product-item__game-name">Far Cry 6</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">2,888</div>
                         </div>
+
                         <div class="product-item__description">In-Game Content</div>
                      </div>
                      <div class="product-item__price">
@@ -240,31 +283,26 @@
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/COD_Warzone.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/COD_Warzone.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Shooter</span>
                            </div>
                            <div class="product-item__game-name">Call of Duty: Warzone</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">18,982</div>
                         </div>
+
                         <div class="product-item__description">Get the Captain Price Operator included with purchase
                         </div>
                      </div>
@@ -280,31 +318,26 @@
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/WOW-Shadowlands.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/WOW-Shadowlands.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Action</span>
                            </div>
                            <div class="product-item__game-name">World of Warcraft: Shadowlands</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">299</div>
                         </div>
+
                         <div class="product-item__description">Includes access to World of Warcraft, Burning Crusade
                            Classic, and WoW Classic!</div>
                      </div>
@@ -313,38 +346,33 @@
                            <span class="product-item__old-price-num"></span>
                            <span class="product-item__price-num">Free</span>
                         </div>
-                        <div class="product-item__discount">-50%</div>
+                        <div class="product-item__discount d-none">-50%</div>
                      </div>
                   </div>
                </div>
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/Fortnite.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/Fortnite.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Shooter</span>
                            </div>
                            <div class="product-item__game-name">Fortnite</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">9,199</div>
                         </div>
+
                         <div class="product-item__description">Get the Captain Price Operator included with purchase
                         </div>
                      </div>
@@ -360,31 +388,26 @@
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/Horizon_Forbidden_West.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/Horizon_Forbidden_West.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Action RPG</span>
                            </div>
                            <div class="product-item__game-name">Horizon: Forbidden West</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">9,199</div>
                         </div>
+
                         <div class="product-item__description">Platinum Edition</div>
                      </div>
                      <div class="product-item__price">
@@ -392,38 +415,33 @@
                            <span class="product-item__old-price-num">$1,299</span>
                            <span class="product-item__price-num">$649</span>
                         </div>
-                        <div class="product-item__discount">-50%</div>
+                        <div class="product-item__discount d-none">-50%</div>
                      </div>
                   </div>
                </div>
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/Need_for_Speed_Heat.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/Need_for_Speed_Heat.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Action</span>
                            </div>
                            <div class="product-item__game-name">Need for Speed: Heat</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">2,911</div>
                         </div>
+
                         <div class="product-item__description">Includes access to World of Warcraft, Burning Crusade
                            Classic, and WoW Classic!</div>
                      </div>
@@ -432,38 +450,33 @@
                            <span class="product-item__old-price-num"></span>
                            <span class="product-item__price-num">$649</span>
                         </div>
-                        <div class="product-item__discount">-50%</div>
+                        <div class="product-item__discount d-none">-50%</div>
                      </div>
                   </div>
                </div>
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/Spider-Man_Miles_Morales.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/Spider-Man_Miles_Morales.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Action</span>
                            </div>
                            <div class="product-item__game-name">Spider-Man: Miles Morales</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">920</div>
                         </div>
+
                         <div class="product-item__description">Get the Captain Price Operator included with purchase
                         </div>
                      </div>
@@ -479,31 +492,26 @@
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/Witcher-3.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/Witcher-3.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Card Game</span>
                            </div>
                            <div class="product-item__game-name">Witcher 3: Wild Hunt</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">299,890</div>
                         </div>
+
                         <div class="product-item__description">Will only be usable in the new Classic Format when it is
                            released</div>
                      </div>
@@ -512,18 +520,18 @@
                            <span class="product-item__old-price-num">$1,299</span>
                            <span class="product-item__price-num">$649</span>
                         </div>
-                        <div class="product-item__discount">-50%</div>
+                        <div class="product-item__discount d-none">-50%</div>
                      </div>
                   </div>
                </div>
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/Guardians-of-the-Galaxy.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/Guardians-of-the-Galaxy.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Shooter</span>
@@ -532,17 +540,10 @@
                         </a>
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">29</div>
                         </div>
                         <div class="product-item__description">In-Game Content</div>
                      </div>
@@ -558,31 +559,26 @@
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/Crash-team-racing.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/Crash-team-racing.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Shooter</span>
                            </div>
                            <div class="product-item__game-name">Crash Team Racing</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">9,199</div>
                         </div>
+
                         <div class="product-item__description">Get the Captain Price Operator included with purchase
                         </div>
                      </div>
@@ -598,31 +594,26 @@
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/spider-man.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/spider-man.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Multiplayer RPG</span>
                            </div>
                            <div class="product-item__game-name">Spider-Man</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">9,199</div>
                         </div>
+
                         <div class="product-item__description">Includes access to World of Warcraft, Burning Crusade
                            Classic, and WoW Classic!</div>
                      </div>
@@ -631,46 +622,41 @@
                            <span class="product-item__old-price-num"></span>
                            <span class="product-item__price-num">$649</span>
                         </div>
-                        <div class="product-item__discount">-50%</div>
+                        <div class="product-item__discount d-none">-50%</div>
                      </div>
                   </div>
                </div>
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
+                     <div class="product-item__img-container">
+                        <img src="image/empty.jpg" alt="" class="product-item__img">
+                     </div>
                      <div class="product-item__main-body">
                         <a href="" class="product-item__game-link">
-                           <div class="product-item__img-container">
-                              <img src="image/empty.jpg" alt="" class="product-item__img">
-                           </div>
                            <div class="product-item__genre">
                               <i class="bi bi-dot product-item__dot"></i>
                               <span class="product-item__genre-name">Action RPG</span>
                            </div>
                            <div class="product-item__game-name">Dragon Age 5</div>
                         </a>
+
                         <div class="product-item__rating rating">
                            <div class="rating__body">
-                              <div class="rating__active">
-                                 <div class="rating__items">
-                                    <input type="radio" class="rating__item" value="1" name="rating">
-                                    <input type="radio" class="rating__item" value="2" name="rating">
-                                    <input type="radio" class="rating__item" value="3" name="rating">
-                                    <input type="radio" class="rating__item" value="4" name="rating">
-                                    <input type="radio" class="rating__item" value="5" name="rating">
-                                 </div>
-                              </div>
+                              <div class="rating__active"></div>
                            </div>
-                           <div class="rating__value">1,820</div>
+                           <div class="rating__value"></div>
+                           <div class="rating__votes-number">0</div>
                         </div>
+
                         <div class="product-item__description">Non released</div>
                      </div>
                      <div class="product-item__price">
                         <div class="product-item__price-nums">
-                           <span class="product-item__old-price-num">$1,299</span>
-                           <span class="product-item__price-num">$649</span>
+                           <span class="product-item__old-price-num"></span>
+                           <span class="product-item__price-num"></span>
                         </div>
-                        <div class="product-item__discount">-50%</div>
+                        <div class="product-item__discount d-none">-50%</div>
                      </div>
                   </div>
                </div>
