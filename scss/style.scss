@@ -112,20 +112,60 @@ body {
       padding: 72px;
    }
 }
-
+.main-page {
+   &__search {
+      margin: 3em 0 1.5em 0;
+   }
+}
 .search {
    &__game-input {
       padding: 0 0.5em;
+   }
+   &__title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #667085;
+      margin-bottom: .5em;
+   }
+   &__outputs {
+      display: flex;
+      gap: 0.5em;
+      flex-wrap: wrap;
+      margin-top: 1.5em;
+   }
+   &__outputs-item {
+      padding: 10px 34px 10px 16px;
+      background: #F4EBFF;
+      border-radius: 8px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #7F56D9;
+      position: relative;
+      cursor: pointer;
+      &::after {
+         content: '';
+         position: absolute;
+         top: 50%;
+         right: 16px;
+         height: 9px;
+         width: 9px;
+         transform: translateY(-50%);
+         background: url(../image/cross.svg) 0 0 /contain no-repeat;
+      }
    }
 }
 .game-input {
    &__wrapper {
       width: 100%;
-      height: 100%;
+      height: 40px;
       background: #FFFFFF;
       border: 1px solid #D0D5DD;
       border-radius: 8px;
-      overflow: hidden;
+      &:not(.custom) {
+         overflow: hidden;
+      }
    }
    &__sort,
    &__game-name,
@@ -149,13 +189,39 @@ body {
          background: url(../image/search-icon.svg) 0 50% no-repeat;
       }
    }
+   &__btn {
+      min-width: 20px;
+      height: 100%;
+      position: relative;
+      flex-shrink: 1;
+      background: none;
+      &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: url(../image/arrow-down.svg) center no-repeat;
+      }
+   }
    &__caterories {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin: 0;
+      padding: 0;
+      position: relative;
+   }
+   &__buttons-block {
       height: 100%;
       display: flex;
       gap: 6px;
       justify-content: flex-start;
       align-items: center;
-      padding: 0 10px;
+      padding: .5em;
    }
    &__category-btn {
       width: auto;
@@ -177,7 +243,48 @@ body {
       height: 5px;
       background: url(../image/cross.svg) 0 0/ contain no-repeat;
    }
-
+   &__sort {
+      background: none;
+      cursor: pointer;
+      height: 100%;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: #101828;
+   }
+   &__sort-item {
+      height: 100%;
+   }
+}
+.select {
+   background: url(../image/arrow-down.svg) 95% center/ 10px 10px no-repeat;
+}
+.categories {
+   position: relative;
+   &__options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: .5em;
+      height: 100px;
+      overflow: auto;
+      display: none;
+      scrollbar-width: none;
+      border: 1px solid rgba(0, 0, 0, 0.253);
+      border-radius: 8px;
+      background: #fff;
+      &::-webkit-scrollbar {
+         width: 0;
+      }
+   }
+   &__options-item {
+      line-height: 2em;
+      font-size: 16px;
+      text-decoration: underline;
+      color: #667085;
+   }
 }
 .breadcrumb-wrapper {
    padding: 2em 0 0;
@@ -206,6 +313,44 @@ body {
 .products {
    display: flex;
    align-items: stretch;
+}
+.product-add {
+   padding: 1rem;
+   &__wrapper {
+      height: 100%;
+      width: 100%;
+      border: 2px dashed #D6BBFB;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2.5em;
+      gap: 1.5em;
+   }
+   &__info {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      text-align: center;
+      color: #98A2B3;
+   }
+   &__btn {
+      appearance: none;
+      border: none;
+      padding: 0;
+      background: #7F56D9;
+      padding: 14px 47px;
+      border-radius: 8px;
+   }
+   &__btn-text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: #FFFFFF;
+      padding-left: 20px;
+      background: url(../image/content/plus-white.svg) 0 center /16px no-repeat;
+   }
 }
 .product-item {
    padding: 1rem;
@@ -322,7 +467,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      width: 0;
+      width: 80%;
       height: 100%;
       overflow: hidden;
       &::before {

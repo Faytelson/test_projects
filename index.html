@@ -136,37 +136,53 @@
                         <div class="game-input__wrapper">
                            <input type="text" class="game-input__game-name" placeholder="Search...">
                         </div>
-                     </div>
-
-                     <div class="search__game-input game-input col-3">
-                        <div class="game-input__wrapper">
-                           <div class="game-input__caterories">
-                              <button class="game-input__category-btn">
-                                 <div class="game-input__category-name">Strategy</div>
-                                 <div class="game-input__category-cross"></div>
-                              </button>
-                              <button class="game-input__category-btn">
-                                 <div class="game-input__category-name">RPG</div>
-                                 <div class="game-input__category-cross"></div>
-                              </button>
-                              <button class="game-input__category-btn">
-                                 <div class="game-input__category-name js-category-num">+3</div>
-                                 <div class="game-input__category-cross"></div>
-                              </button>
-                           </div>
-                           <button class="game-input__btn"></button>
+                        <div class="search__outputs">
+                           <div class="search__outputs-item">Strategy</div>
+                           <div class="search__outputs-item">RPG</div>
+                           <div class="search__outputs-item">Action</div>
+                           <div class="search__outputs-item">Shooter</div>
+                           <div class="search__outputs-item">Clear all</div>
                         </div>
                      </div>
 
                      <div class="search__game-input game-input col-3">
-                        <div class="game-input__wrapper">
+                        <div class="game-input__wrapper custom">
+                           <div class="game-input__caterories categories row">
+                              <div class="game-input__buttons-block col-10">
+                                 <button class="game-input__category-btn">
+                                    <div class="game-input__category-name">Strategy</div>
+                                    <div class="game-input__category-cross"></div>
+                                 </button>
+                                 <button class="game-input__category-btn">
+                                    <div class="game-input__category-name">RPG</div>
+                                    <div class="game-input__category-cross"></div>
+                                 </button>
+                                 <button class="game-input__category-btn">
+                                    <div class="game-input__category-name js-category-num">+3</div>
+                                    <div class="game-input__category-cross"></div>
+                                 </button>
+                              </div>
+                              <div class="categories__options">
+                                 <div class="categories__options-item">Strategy</div>
+                                 <div class="categories__options-item">Shooter</div>
+                                 <div class="categories__options-item">Action</div>
+                                 <div class="categories__options-item">RPG</div>
+                                 <div class="categories__options-item">Card Game</div>
+                              </div>
+                              <button class="game-input__btn col-2"></button>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="search__game-input game-input col-3">
+                        <div class="game-input__wrapper d-flex align-items-center select px-2">
                            <select name="" id="" class="game-input__sort">
-                              <option value="" class="game-input__sort">Popular</option>
-                              <option value="" class="game-input__sort"></option>
-                              <option value="" class="game-input__sort"></option>
-                              <option value="" class="game-input__sort"></option>
-                              <option value="" class="game-input__sort"></option>
-                              <option value="" class="game-input__sort"></option>
+                              <option value="" class="game-input__sort-item">Popular</option>
+                              <option value="" class="game-input__sort-item">New</option>
+                              <option value="" class="game-input__sort-item">Genre</option>
+                              <option value="" class="game-input__sort-item">Rating</option>
+                              <option value="" class="game-input__sort-item">Favourites</option>
+                              <option value="" class="game-input__sort-item">All</option>
                            </select>
                         </div>
                      </div>
@@ -175,7 +191,14 @@
             </div>
 
             <div class="main-page__products products row">
-               <div class="products__product-add product-add col-3"></div>
+               <div class="products__product-add product-add col-3">
+                  <div class="product-add__wrapper">
+                     <div class="product-add__info">You can add a product card by clicking on the button</div>
+                     <button class="product-add__btn">
+                        <div class="product-add__btn-text">Add card</div>
+                     </button>
+                  </div>
+               </div>
 
                <div class="products__product-item product-item col-3">
                   <div class="product-item__wrapper">
